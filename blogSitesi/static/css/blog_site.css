@@ -1,0 +1,52 @@
+h1 a {
+    color: black;
+    font-family: 'Russo One', sans-serif;
+    text-decoration:none;
+}
+.content_container{
+    margin-left: 270px;
+}
+.date {
+    float: right;
+    color: #828282;
+}
+.post {
+    margin-bottom: 70px;
+}
+hr{
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    width: 750px;
+    height: 0.5px;
+}
+.post h1 a, .post h1 a:visited,.post h1 a:hover{
+    text-decoration:none;
+    color: #000000;
+    font-weight: 1200;
+}
+.post a{
+    color: black;
+    font-family: 'Russo One';
+    font-size: bold;
+    text-decoration:none;
+}
+.post a:hover{
+    font-weight: 900;
+    background-color: white;
+    text-decoration:none;
+}
+
+.imgLogo img{width:300px;height:100px;margin: 0 10px 0 0px;}
+/*.fixed-top {
+    top: 100px !important;
+}.imgLogo{      position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030  background: #000;}
+.imgLogo a{    color: #fff;}*/

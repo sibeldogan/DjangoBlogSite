@@ -1,0 +1,48 @@
+{% load staticfiles %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Bilgisayar Sistemleri</title>
+    <link href='https://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{% static 'css/blog_site.css' %}">
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+  </head>
+<body>
+    <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+    <div class="imgLogo">
+           <a href=""><img src="{% static 'image/resim.jpg' %}">Bilgisayar Sistemleri Blog Sayfası</a>
+        </div>
+    </nav>
+<div class="jumbotron">
+      <div class="container">
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+           <div class="col-md-4">
+                {% for gonderi in gonderiler %}
+                    <div class="post">
+
+                        <h1><a href="">{{ gonderi.baslik }}</a></h1>
+
+                        <p>{{ gonderi.icerik|linebreaks }}</p>
+
+                        <div class="date"> <p>Yayinlandi: {{ gonderi.y_tarihi }}</p></div>
+
+                        <a href="" class="tag"><p>{{ gonderi.tag|linebreaks }}</p></a>
+                    </div>
+                {% endfor %}
+            </div>
+      </div>
+      <hr>
+
+      <footer>
+        <p>&copy; 2018</p>
+      </footer>
+    </div>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  </body>
+</html>
