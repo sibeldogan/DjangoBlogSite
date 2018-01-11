@@ -13,7 +13,7 @@
 <body>
     <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
     <div class="imgLogo">
-           <a href=""><img src="{% static 'image/resim.jpg' %}">Bilgisayar Sistemleri Blog Sayfası</a>
+           <a href="" style="color: #fff;"><img style="width: 100px;" src="{% static 'image/resim.jpg' %}">Bilgisayar Sistemleri Blog Sayfası</a>
         </div>
     </nav>
 <div class="jumbotron">
@@ -22,8 +22,8 @@
     </div>
     <div class="container">
       <div class="row">
+           {% for gonderi in gonderiler %}
            <div class="col-md-4">
-                {% for gonderi in gonderiler %}
                     <div class="post">
 
                         <h1><a href="">{{ gonderi.baslik }}</a></h1>
@@ -34,8 +34,8 @@
 
                         <a href="" class="tag"><p>{{ gonderi.tag|linebreaks }}</p></a>
                     </div>
-                {% endfor %}
             </div>
+          {% endfor %}
       </div>
       <hr>
 
